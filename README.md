@@ -1,19 +1,19 @@
 # Golang Text Wrapper with Indent
 
-[![GoDoc](https://pkg.go.dev/badge/github.com/bassosimone/textwrapper)](https://pkg.go.dev/github.com/bassosimone/textwrapper) [![Build Status](https://github.com/bassosimone/textwrapper/actions/workflows/go.yml/badge.svg)](https://github.com/bassosimone/textwrapper/actions) [![codecov](https://codecov.io/gh/bassosimone/textwrapper/branch/main/graph/badge.svg)](https://codecov.io/gh/bassosimone/textwrapper)
+[![GoDoc](https://pkg.go.dev/badge/github.com/bassosimone/textwrap)](https://pkg.go.dev/github.com/bassosimone/textwrap) [![Build Status](https://github.com/bassosimone/textwrap/actions/workflows/go.yml/badge.svg)](https://github.com/bassosimone/textwrap/actions) [![codecov](https://codecov.io/gh/bassosimone/textwrap/branch/main/graph/badge.svg)](https://codecov.io/gh/bassosimone/textwrap)
 
-The `textwrapper` Go package contains code to wrap and indent text.
+The `textwrap` Go package contains code to wrap and indent text.
 
 For example:
 
 ```Go
-import "github.com/bassosimone/textwrapper"
+import "github.com/bassosimone/textwrap"
 
 const (
 	indent = "    "
 	width = 72
 )
-output := textwrapper.Do(paragraph, width, indent)
+output := textwrap.Do(paragraph, width, indent)
 ```
 
 The above example wraps paragraph with the given four spaces
@@ -24,7 +24,7 @@ indent such that lines are `<=` 72 chars.
 To add this package as a dependency to your module:
 
 ```sh
-go get github.com/bassosimone/textwrapper
+go get github.com/bassosimone/textwrap
 ```
 
 ## Development
